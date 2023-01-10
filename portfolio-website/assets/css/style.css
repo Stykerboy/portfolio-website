@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --sidbar-width: 240px;
+}
+
+body {
+    background-color: black;
+    font-family: "Bai Jamjuree"
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: rgba(197, 58, 58);
+}
+
+.bg-base {
+    background-color: rgba(197, 58, 58);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lead {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.4s;
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: rgb(117, 34, 34);
+    color: rgb(1, 2, 50);
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 rgb(117, 34, 34);
+}
+
+/*NavBar*/
+
+.navbar {
+    background-color:  rgb(50, 47, 47);
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: rgba(197, 58, 58);
+}
+
+.navbar .nav-link.active {
+    color: rgba(197, 58, 58);
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/sidebar-img.jpg);
+        background-size: cover;
+    }
+
+    .navbar-brand img {
+        border: 8px solid black;
+    }
+
+    /*Content Wrapper*/
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+/* Button */
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: rgba(197, 58, 58);
+    border-color: rgba(197, 58, 58);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: rgb(117, 34, 34);
+    color: rgb(0, 0, 0);
+    border-color: rgb(117, 34, 34);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* Card */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
