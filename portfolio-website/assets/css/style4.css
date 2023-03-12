@@ -95,7 +95,7 @@ img {
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/sidebar-img2.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/sidebar-img3.png);
         background-size: center;
     }
 
@@ -109,87 +109,15 @@ img {
     }
 }
 
-/* Button */
-.btn {
-    padding: 12px 28px;
-    font-weight: 700;
-}
-
-.btn-brand {
-    background-color: rgba(197, 58, 58);
-    border-color: rgba(197, 58, 58);
-}
-
-.btn-brand:hover,
-.btn-brand:focus {
-    background-color: rgb(117, 34, 34);
-    color: rgb(0, 0, 0);
-    border-color: rgb(117, 34, 34);
-}
-
-.link-custom {
-    font-weight: 700;
-    position: relative;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.link-custom::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 0;
-    top: 110%;
-    transition: all 0.4s;
-}
-
-.link-custom:hover::after {
-    width: 100%;
-}
-
-/* Card */
-.card-custom .card-custom-image {
-    overflow: hidden;
-}
-
-.card-custom .card-custom-image img {
-    transition: all 0.4s ease;
-}
-
-.card-custom:hover .card-custom-image img {
-    transform: scale(1.1);
-}
-
-#resumePDF {
-    width: 100%;
-}
-
-/*Contact*/
-#contact .form-control {
-    background-color: rgb(65, 65, 65);
-    border-color: rgb(65, 65, 65);
-    color: rgb(199, 198, 198);
-}
-
-#contact .form-control:focus {
-    border-color: rgba(197, 58, 58);
-    box-shadow: none;
-}
-
-#contact .form-control::placeholder {
-    color: rgb(24, 24, 24);
-}
-
-#contact input.form-control {
-    height: 44px;
-}
-
-.message {
-    width: 100%;
-    position: relative;
-    display: flex;
+.error-icon i {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    color: white;
+    border-radius: 100%;
+    font-size: 24px;
 }
 
 /*Social Icons*/
